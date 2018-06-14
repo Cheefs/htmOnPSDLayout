@@ -1,0 +1,63 @@
+.footer {
+    background-color: #373737;
+    height: 200px;
+}
+
+.footerContainer {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+    background-color: rgb(231, 35, 166);
+    height: 200px;
+}
+
+.category {
+    margin-left: 10px;
+    float: left;
+    height: 17px;
+    font:18px "Raleway Extrabold",serif;
+    font-weight: 800;
+    color: #ffffff;
+}
+.categoryItems {
+    
+    list-style-type: none;
+    height: 118px;
+    font:12px "Roboto Regular",serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.email {
+    width: 131px;
+    height: 14px;
+    line-height: 2.57;
+    text-align: left;
+    color: #faef03;
+}
+.footerBottom,
+.bottomBlock {
+    height: 50px;
+    background-color: #333333;
+}
+.bottomBlock {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.copyright {
+    position: relative;
+    top:21px;
+    height: 13px;
+    font:12px "Roboto Regular",serif;
+    
+    line-height: 1.83;
+    color: #dad9d9;
+}
+
+.footerIcons i {
+    float: right;
+    color: #dad9d9;
+    margin-right: 15px;
+}

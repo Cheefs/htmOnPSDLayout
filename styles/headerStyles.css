@@ -1,0 +1,111 @@
+.header {
+    background-color: lightseagreen;
+    height: 700px;
+}
+
+.headerContainer {
+    position: relative;
+    background-color: aquamarine;
+    width: 1170px;
+    height: inherit;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    background: url(../images/surfhouse-logo.png);
+    width: 125px;
+    height: 111px;
+    left: 69px;
+    top:24px;
+}
+
+.headerSocials {
+    display: block;
+    width: 125px;
+    position: absolute;
+    right: 229px;
+    top: 50px;
+    background-color: rgba(0, 0, 255, 0.527);
+}
+
+.headerSocials i {
+    letter-spacing: 10px;
+}
+
+.headerSocials i:last-child {
+    letter-spacing: 0;
+}
+
+.welcomeBloc {
+    position: absolute;
+    top: 336px;
+    height: 300px;
+    width: 270px;
+    background-color: #fff51f;
+}
+
+.promoInfo {
+    position: absolute;
+    right: 274px;
+    top: 243px;
+    width: 313px;
+    height: 168px;
+    background-color: rgba(210, 105, 30, 0.404);
+
+    width: 313px;
+    height: 169px;
+    font:18px "Raleway Regular",serif;
+    line-height: 1.33;
+    color: #fff51f;
+    text-align: justify;
+}
+
+.promoHead {
+    font: 48px "Raleway Regular",serif;
+    text-align: left;
+    font-weight: 800;
+    line-height: 0.71;
+}
+
+.btnBuy {
+    position: absolute;
+    background-color: #fff51f;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    right: 460px;
+    top: 474px;
+    font:14px"Raleway Extrabold",serif;
+    font-weight: 900;
+    color: #000000;
+}
+.btnBuy:hover {
+    background-color: #1fff1f;
+}
+.btnBuy:active {
+    background-color: #1f35ff;
+}
+
+.welcomeHead {
+    margin: 82px 46px 24px 25px;
+    width: 199px;
+    height: 52px;
+    font:29px "Raleway Bold", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+    color: #333333;
+}
+
+.welcomeText {
+    width: 218px;
+    height: 60px;
+    margin: 0 82px 30px 22px;
+    font: 17px "Raleway Bold", serif;
+    font-weight: bold;
+    line-height: 0.78;
+    color: #333333;
+    text-align: justify;
+}
