@@ -1,0 +1,533 @@
+@import "_variables";
+
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+    background: rgb(240,249,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(240,249,255,1) 0%, rgba(203,235,255,1) 47%, rgba(161,219,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+}
+
+.header {
+    background:url(../images/indexBack.jpg);
+    height: 700px;
+    background-size: cover;
+
+    .headerContainer {
+        position: relative;
+        width: 1170px;
+        height: inherit;
+        margin: 0 auto;
+
+        .logo {
+            display: block;
+            position: absolute;
+            background: url(../images/surfhouse-logo.png);
+            width: 125px;
+            height: 111px;
+            left: 69px;
+            top:24px;
+        }
+
+        .headerSocials {
+            display: block;
+            width: 125px;
+            position: absolute;
+            right: 229px;
+            top: 50px;
+
+            & i:hover {
+                color: #0c7a0c;
+            }
+
+            & i:last-child {
+                letter-spacing: 0;
+            } 
+             & a {
+            color:#f8f8f8;
+            letter-spacing: 10px;
+            }
+        }
+
+        .welcomeBloc {
+            position: absolute;
+            top: 336px;
+            height: 300px;
+            width: 270px;
+            background-color: #fff51f;
+
+            .welcomeHead {
+                margin: 82px 46px 24px 25px;
+                width: 199px;
+                height: 52px;
+                font:29px "Raleway Bold", serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                line-height: 1;
+                text-align: left;
+                color: #333333;
+            }
+            
+            .welcomeText {
+                width: 218px;
+                height: 60px;
+                margin: 0 82px 30px 22px;
+                font: 17px "Raleway Bold", serif;
+                font-weight: bold;
+                line-height: 0.78;
+                color: #333333;
+                text-align: justify;
+            }
+
+        }
+        
+        .promoInfo {
+            position: absolute;
+            right: 274px;
+            top: 243px;
+            width: 313px;
+            height: 168px;
+            font:18px "Raleway Regular",serif;
+            line-height: 1.33;
+            color: #fff51f;
+            text-align: justify;
+
+            .promoHead {
+                font: 48px "Raleway Regular",serif;
+                text-align: left;
+                font-weight: 800;
+                line-height: 0.71;
+            }
+        }
+
+        .btnBuy {
+            position: absolute;
+            background-color: #fff51f;
+            text-transform: uppercase;
+            padding: 20px 30px;
+            right: 460px;
+            top: 474px;
+            font:14px "Raleway Extrabold",serif;
+            font-weight: 900;
+            color: #000000;
+
+            &:hover {
+                background-color: #1fff1f;
+            }
+
+            &:active {
+                background-color: #1f35ff;
+            }
+        }
+    }
+}
+
+.content {
+
+  margin-top: -20px;
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .contentContainer {
+        margin: 0 auto;
+        width: 1170px;
+        
+        .contentContainer {
+            margin: 0 auto;
+            width: 1170px;
+        }
+
+        &:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+    }
+
+
+    .contentLeft {
+        float: left;
+        width: 270px;
+    }
+
+    .menu {
+    float: left;
+    width: 270px;
+    font: 14px "Roboto Bold", serif;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase; 
+
+
+        .menuItems a {
+            display: block;
+            padding: 15px 185px 6px 40px;
+            background-color: #26d2fc;
+            white-space: nowrap;
+            color: #000000;
+            & {
+                font: 14px "Roboto Bold", serif;
+            }
+
+            &:last-child {
+                padding-bottom: 15px;
+            }
+                
+            &:hover {
+                background-color:#333333;
+            }
+            &:active {
+                text-decoration: none;
+            }
+
+        }
+        .menuHead {  
+            line-height: 2.29;
+            margin: 0;
+            padding: 22px 188px 14px 42px;
+            color: #ffffff;
+            background-color:#333333;
+            & a {
+                font: 14px "Roboto Bold", serif;
+            }
+        }
+    }
+
+    .banner {
+        margin-top: 30px;
+        box-sizing: border-box;
+        float: left;
+        width: 270px;
+        height: 300px;
+        background: url(../images/store.jpg);
+        border: 5px solid #ffffff;   
+        
+        & strong {
+            display: block;
+            width: 109px;
+            height: 98px;
+            margin: 129px 19px 73px 142px;
+            text-transform: uppercase;
+            font:36px "Raleway Heavy",serif;
+            font-weight: 900;
+            line-height: 1;
+            text-align: left;
+            color: #333333;
+        }
+    }
+    
+    .productsContainer {
+        float: right;
+        width: 870px;
+
+        .productsHeader {
+            width: 870px;
+            box-sizing: border-box;
+            float: left;
+            height: 78px;
+            padding:0 25px;
+            background-color: #f8f8f8;
+            text-transform: uppercase;
+            font: 22px "Roboto Black Italic",serif;
+            font-weight: 900;
+            font-style: italic;
+            line-height: 78px;
+            color: #707070;
+        }
+
+        .productPreviev {
+            margin: 30px 0;
+            float: right;
+            left: 300px;
+            width: 870px;
+          
+        }
+        .productUnit {
+            position: relative;
+            float: left;   
+            margin: 30px 30px 0 0;
+            width: 270px;
+            height: 320px;
+            background-color: #ffffff;
+
+            &:nth-child(-n+3) { 
+                margin-top: 0;
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+       
+        .productImage {
+            margin: 10px 10px 0;
+            width: 250px;
+            height: 235px;
+        }
+        .productName {
+            float: left;
+            margin:  24px 18px; 
+            width: 132px;
+            height: 14px;
+            font-size: 14px;
+            line-height: 1.29;
+            &{
+                max-height: 5em;
+                overflow: hidden;
+                font-family: "Roboto Black Italic", serif;
+                font-style: italic;
+                color: #333333;
+                font-weight: 900;
+                float: right;
+            }
+        }
+        .productPrice {
+            margin-top: 24px;
+            font-size: 18px;
+            &{
+                max-height: 5em;
+                overflow: hidden;
+                font-family: "Roboto Black Italic", serif;
+                font-style: italic;
+                color: #333333;
+                font-weight: 900;
+                float: right;
+            }
+        }
+        .discount {
+            margin-top: 8px;
+            font-size: 14px;
+            font-style: italic;
+            text-align: right;
+            color: rgba(255, 0, 0, 0.6);
+            text-decoration: line-through;
+        }
+
+        .iconNew {
+            background: url("../images/corner.svg") no-repeat;
+            &{
+                height: 46px;
+                width: 46px;
+                float: right;
+                position: absolute;
+                top:0;
+                right: 0;
+                font: 9px "Roboto Regular" ,serif;
+                text-transform: uppercase;
+                text-align: left;
+                color: #ffffff;
+                padding: 9px 22px 0;
+                box-sizing: border-box
+            }
+        }
+        .iconHot {
+            background: url("../images/cornerHot.svg") no-repeat;
+            &{
+                height: 46px;
+                width: 46px;
+                float: right;
+                position: absolute;
+                top:0;
+                right: 0;
+                font: 9px "Roboto Regular" ,serif;
+                text-transform: uppercase;
+                text-align: left;
+                color: #ffffff;
+                padding: 9px 22px 0;
+                box-sizing: border-box
+            }
+        }
+
+        .brandsContainer {
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            .brands {
+                position: relative;
+                top: 30px;
+                clear: both;
+                height: 160px;
+                background: #ffffff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px;
+                box-sizing: border-box;
+            }
+            
+        }
+    }
+
+    .feedBlock {
+        padding-top: 50px;
+        height: 350px;
+        background-color: #eaeaea;
+        box-sizing: border-box;
+        .feed {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+
+            font:22px "Roboto Black Italic",serif;
+            font-weight: 900;
+            font-style: italic;
+            color: #333333;
+
+            & i:last-of-type {
+                font-size: 18px
+            }
+        }
+        .feedPhotos {
+            margin-top: 29px;
+            display: flex;
+            justify-content: space-between;
+        }
+        & img {
+            border: 8px solid #ffffff;
+            box-sizing: border-box;
+        }
+        & img:last-of-type {
+            margin: 0;
+        }
+    }
+
+    .socialButtons {
+        display: flex;
+        height: 150px;
+
+        & a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100%/3);
+            height: inherit;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 4rem;
+            background-color: #3fccfd;
+
+            & a:first-child {
+                background-color: #3b5997;
+            }
+            & a:last-child {
+                background-color: #cb2027;
+            }
+        } 
+    }
+}
+
+
+
+.footer {
+    background-color: #373737;
+    height: 351px;
+    color: #ffffff;
+}
+
+.footerContainer {
+    width: 1170px;
+    margin: 0 auto;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+    box-sizing: border-box; 
+}
+
+.collums {
+    margin-right: 10px;
+    padding: 0;
+    font: 12px "Roboto Regular", sans-serif;
+}
+.category {
+    margin-bottom: 27px;
+    height: 17px;
+    font:18px "Raleway Extrabold",serif;
+    font-weight: 800;
+}
+
+.categoryItems {
+    text-align: justify;
+    padding: 0;
+    list-style-type: none;
+    height: 118px;
+    line-height: 1.5;
+}
+.categoryItems a {
+    display: block;
+    color:inherit;
+}
+.categoryItems input[type="text"] {
+    background-color: yellow;
+    box-sizing: border-box;
+    float: left;
+    outline: none;
+    height: 30px;
+    width: 180px;
+    border: none;
+    padding: 0 5px;
+}
+
+.categoryItems input[type="submit"] {
+    outline: none;
+    height: 30px;
+    width: 71px;
+    border: none;
+    background-color: #000000;
+    color:white;
+}
+
+.categoryItems input[type="submit"]:hover {
+    background-color: #3b5997;
+}
+
+.subscribeText {
+    margin-bottom: 20px;
+}
+
+.email {
+    width: 131px;
+    height: 14px;
+    line-height: 2.57;
+    color: #faef03;
+}
+.footerBottom,
+.bottomBlock {
+    height: 50px;
+    background-color: #333333;
+}
+
+.bottomBlock {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.copyright {
+    position: relative;
+    top:21px;
+    height: 13px;
+    font:12px "Roboto Regular",serif;
+    line-height: 1.83;
+    color: #dad9d9;
+}
+.about {
+    width: 232px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.footerIcons i {
+    float: right;
+    color: #dad9d9;
+    margin-right: 15px;
+}
+
+.footerIcons i:hover {
+    color: #1fff1f;
+}
