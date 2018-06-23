@@ -34,3 +34,66 @@
     src: url('../fonts/Raleway-Heavy.otf');
 }
 
+@font-face {
+    font-family:"Raleway Black";
+    src: url('../fonts/raleway-black.ttf');
+}
+@font-face {
+    font-family: "Raleway Bold Italic";
+    src: url('../fonts/raleway-bold-italic.ttf');
+}
+@font-face {
+    font-family: "Raleway Black Italic";
+    src:url('../fonts/raleway-black-italic.ttf')
+}
+
+.respondTo(@_device, @_content) {
+    & when (@_device = phones) {
+      @media (max-width: 479px) { @_content(); }
+    }
+    & when (@_device = wide-phones) {
+      @media (min-width: 480px) and (max-width: 767px) { @_content(); }
+    }
+    & when (@_device = tablets) {
+      @media (min-width: 768px) and (max-width: 991px) { @_content(); }
+    }
+    & when (@_device = small-desktops) {
+      @media (min-width: 992px) and (max-width: 1199px) { @_content(); }
+    }
+    & when (@_device = lg-desktops) {
+      @media (min-width: 1200px) and (max-width: 1440px) { @_content(); }
+    }
+    & when (@_device = xlg-desktops) {
+      @media (min-width: 1441px) and (max-width: 1920px) { @_content(); }
+    }
+  }
+  
+  .customRespond(@_minWidth, @_maxWidth, @_styles) {
+    @media (min-width: @_minWidth) and (max-width: @_maxWidth) {
+      @_styles();
+    }
+  }
+  
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+.productTextStules() {
+    max-height: 5em;
+    overflow: hidden;
+    font-family: "Roboto Black Italic", serif;
+    font-style: italic;
+    color: #333333;
+    font-weight: 900;
+    float: right;
+}
+
+@bgColor: #ccc;
+@textSize: 2rem;
+@headerHeight:700px;
+@containerWidth:1170px;
+@autoMargin:0 auto;
+@productTextColor:#333;
+@productTextFont:"Roboto Black Italic", sans-serif;
